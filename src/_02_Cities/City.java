@@ -15,7 +15,6 @@ public abstract class City {
 	
 	public double getGrowthRate() {
 		return growthRate;
-	}
-	
+	} 
 	abstract double getAnnualTaxes();
 }

@@ -8,8 +8,19 @@ public class MixedCapsString extends SpecialString{
 
 	@Override
 	public String funkifyText(String s) {
-		
-		return "";
+		String returnString = s;
+		char[] charArray = s.toCharArray();
+		for (int i = 0; i < charArray.length; i++) {
+			if(i%2==0) {
+				charArray[i] = Character.toLowerCase(charArray[i]);
+			}
+			else {
+				charArray[i] = Character.toUpperCase(charArray[i]);
+			}
+		}
+		returnString = new String(charArray);
+		System.out.println(returnString);
+		return returnString;
 	}
 
 }
